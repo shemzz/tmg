@@ -56,7 +56,34 @@
     position: absolute;
     z-index: 12 !important;
   }
-  
+  .logout-modal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400;
+    background-color: #fff;
+    box-shadow: 24;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+   .center{
+    text-align: center;
+   }
+   .buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+   }
+   .buttons Button{
+    margin: 0px 10px;
+    border-radius: 18px;
+    padding: 5px 30px;
+   }
    /* Medium <= 992px */
     
    @media screen and (max-width: 992px) {

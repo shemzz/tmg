@@ -1,7 +1,9 @@
 /* eslint-disable react/no-unknown-property */
 import { Link } from 'react-router-dom';
 import logo from '../assets/logo.png'
+import { useNavigate } from 'react-router-dom';
 function SignIn() {
+    const navigate = useNavigate();
     return (
         <>
             <div className='dark'>
@@ -21,7 +23,7 @@ function SignIn() {
                 <label for="password">Password</label>
                 <input type="password" id="password" required />
             </div>
-            <button type="submit">Log In</button>
+                            <button type="button" onClick={()=>navigate('/dashboard')}>Log In</button>
                     </form>
                     <p>Don't have an account? <Link>Sign Up</Link></p>
                 </div>
