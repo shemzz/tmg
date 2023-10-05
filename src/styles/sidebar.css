@@ -8,6 +8,10 @@
     -webkit-transition: all 0.5s;
   }
   
+  #sidebar a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.87);
+  }
   .sidebar-title {
     display: flex;
     justify-content: space-between;
@@ -34,7 +38,7 @@
   
   .sidebar-list-item {
     padding: 20px 20px 20px 50px;
-    font-size: 18px;
+    text-decoration: none;
   }
 
   
@@ -43,15 +47,8 @@
     cursor: pointer;
   }
   
-  .sidebar-list-item > a {
-    text-decoration: none;
-    color: rgba(255, 255, 255, 0.87);
-  }
-
-  .sidebar-list-item > a.active {
-  color: rgb(2, 2, 2);
-    cursor: pointer;
-    font-weight: bolder;
+.active {
+    background-color: rgba(50, 50, 50, 0.2);
   }
   
   .sidebar-responsive {

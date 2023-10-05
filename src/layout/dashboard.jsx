@@ -27,7 +27,10 @@ function Dashboard() {
         <Route path='/users/user/:id' element={<UserDetail />} />
         <Route path='/users/user/:id/progress' element={<Progress />} />
                   <Route path='*' element={<h1>Not Found</h1>} />
-            </Routes>
+      </Routes>
+      <footer className='footer'>
+        <p>&copy; 2023 D.O.P Programme</p>
+      </footer>
   </div>
   )
 }

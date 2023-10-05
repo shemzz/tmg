@@ -40,10 +40,23 @@ body {
     grid-template-rows: 0.2fr 3fr;
     grid-template-areas:
       'sidebar header header header'
-      'sidebar main main main';
+      'sidebar main main main'
+      'footer footer footer footer';
     height: 100vh;
   }
  
+  .footer {
+    grid-area: footer;
+    background-color: #fff;
+    color: #5f5e5ea9;
+    text-align: left;
+    padding: 0px 10px;
+  }
+
+  .footer p{
+    font-size: 0.8em;
+    margin-left: 30px;
+  }
 
   /* Medium <= 992px */
     
@@ -53,6 +66,13 @@ body {
       grid-template-rows: 0.2fr 3fr;
       grid-template-areas:
         'header'
-        'main';
+        'main'
+        'footer';
+    }
+    .footer{
+      text-align: center;
+    }
+    .footer p{
+      margin-left: 0px;
     }
   }
