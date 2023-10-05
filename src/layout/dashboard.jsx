@@ -18,13 +18,12 @@ function Dashboard() {
     <div className='grid-container'>
         <Header OpenSidebar={OpenSidebar}/>
           <SideBar openSidebarToggle={openSidebarToggle} OpenSidebar={OpenSidebar} />
-          <main>
+          
           <Routes>
               <Route path='/' element={<Home />} />
                   <Route path='/users' element={<Users />} />
                   <Route path='*' element={<h1>Not Found</h1>} />
             </Routes>
-          </main>
   </div>
   )
 }

@@ -42,7 +42,7 @@ function Chart() {
 
             <div className='chart'>
             <div className='chart-detail'>
-                    <h5>Registered Profiles</h5>
+                    <h5>Company Profiles</h5>
                     <div className='chart-dates'>
                         <h6>1D</h6>
                         <h6>5D</h6>
@@ -75,7 +75,7 @@ function Chart() {
 
             <div className='chart'>
             <div className='chart-detail'>
-                    <h5>Registered Profiles</h5>
+                    <h5>Total Profiles</h5>
                     <div className='chart-dates'>
                         <h6>1D</h6>
                         <h6>5D</h6>
