@@ -8,6 +8,7 @@ import Header from '../components/Header'
 import UserDetail from '../components/UserDetail';
 import Progress from '../components/Progress';
 import Sidebar from '../components/Sidebar';
+import AddUser from '../components/AddUser';
 
 function Dashboard() {
   const [openSidebarToggle, setOpenSidebarToggle] = useState(false)
@@ -26,7 +27,8 @@ function Dashboard() {
         <Route path='/users' element={<Users />} />
         <Route path='/users/user/:id' element={<UserDetail />} />
         <Route path='/users/user/:id/progress' element={<Progress />} />
-                  <Route path='*' element={<h1>Not Found</h1>} />
+        <Route path='/users/add-user' element={<AddUser />} />
+        <Route path='*' element={<h1>Not Found</h1>} />
       </Routes>
       <footer className='footer'>
         <p>&copy; 2023 D.O.P Programme</p>

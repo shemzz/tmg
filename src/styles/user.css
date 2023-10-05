@@ -137,7 +137,52 @@ main{
   .user .update {
     background-color: #bcaf03;
   }
+    .add{
+    grid-template-columns: 1fr !important;
+    width: 45%;
+    margin: auto !important;    
+  }
+  .add .edit{
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center;
+  }
+  .add .edit .img-holder{
+    width: 28%;
+  }
+  .add .add-detail input{
+    margin-bottom: 20px;
+    background-color: #f5f5f5;
+    font-size: 14px;
+  }
+  .add .add-detail .password{
+    position: relative;
+  }
+  .add .add-detail .password input{
+    margin-bottom: 20px;
+    background-color: #f5f5f5;
+    font-size: 14px;
+    border-radius: 18px !important;
+    padding: 10px 20px !important;
+    width: 90% !important;
+  }
+  .add .add-detail .password Button{
+    border-radius: 18px;
+    width: fit-content;
+    padding: 6px 30px;
+    background-color: transparent;
+  }
 
+  .add .add-detail label{
+    font-size: 14px;
+    margin-left: 8px;
+  }
+  .add .add-detail Button{
+    border-radius: 18px;
+    width: fit-content;
+    padding: 6px 30px;
+    background-color: #1D7EC3;
+  }
    /* Small <= 768px */
     
    @media screen and (max-width: 768px) {
@@ -156,6 +201,9 @@ main{
     margin-right: 5px;
     width: auto;
     border-radius: 12px;
+   }
+   .add{
+    width: 100%;
    }
    .add-button button{
     font-size: 12px;
