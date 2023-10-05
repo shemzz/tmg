@@ -1,12 +1,14 @@
 import { Routes, Route} from 'react-router-dom'; 
-import SignIn from '../pages/auth/Signin';
+import SignIn from '../components/SignIn';
+
+import '../styles/auth.css'
 
 function Auth() {
 
   return (
-    <div className='grid-container'>
+    <div className='auth-container'>
       <Routes>
-        <Route path='/' element={<SignIn />} />
+        <Route path='/sign-in' element={<SignIn />} />
       </Routes>
       
     </div>

@@ -14,7 +14,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Navigate to="/dashboard" replace />} />
         <Route path='/dashboard/*' element={<Dashboard />} />
-        <Route path='/auth' element={<Auth />} />
+        <Route path='/auth/*' element={<Auth />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>

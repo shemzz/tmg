@@ -36,9 +36,7 @@
     padding: 20px 20px 20px 50px;
     font-size: 18px;
   }
-  .active {
-    background-color: rgba(50, 50, 50, 0.2);
-  }
+
   
   .sidebar-list-item:hover {
     background-color: rgba(50, 50, 50, 0.2);
@@ -51,8 +49,9 @@
   }
 
   .sidebar-list-item > a.active {
-    background-color: rgba(50, 50, 50, 0.2);
+  color: rgb(2, 2, 2);
     cursor: pointer;
+    font-weight: bolder;
   }
   
   .sidebar-responsive {

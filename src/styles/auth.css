@@ -1,0 +1,121 @@
+.auth-container{
+    background-image: url(../assets/auth-bg.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dark {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(4, 4, 4, 0.8); /* Opacity of 0.8 */
+    height: 100vh;
+}
+.signin{
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-holder{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 7px;
+    background-color: #1D7EC3;
+}
+.form-holder{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 7px;
+    background-color: #ffffff;
+}
+.form-holder h2{
+    margin: 12px;
+}
+.form-holder form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.form-group {
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.form-group input{
+    align-items: center;
+}
+
+label {
+    top: 0;
+    pointer-events: none;
+    transition: 0.2s ease all;
+    color: #000000;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 90%;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    background-color: #e4e0e0;
+    color: #030303;
+    font-size: 16px;
+}
+
+input:focus {
+    border: 1px solid #1D7EC3;
+}
+
+button {
+    /* display: block; */
+    width: 97%;
+    padding: 10px;
+    border: none;
+    background-color: #1D7EC3;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Small <= 768px */
+    
+@media screen and (max-width: 768px) {
+    .signin {
+      width: 80%;
+    }
+  }
