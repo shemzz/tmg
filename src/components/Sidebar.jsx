@@ -4,6 +4,7 @@ import '../styles/sidebar.css'
 import '../styles/icons.css'
  import logo from '../assets/logo.png';
 import { BsXCircle } from 'react-icons/bs';
+import { NavLink } from 'react-router-dom';
 
 function Sidebar({openSidebarToggle, OpenSidebar}) {
   return (
@@ -16,30 +17,30 @@ function Sidebar({openSidebarToggle, OpenSidebar}) {
         </div>
 
         <ul className='sidebar-list'>
-            <li className='sidebar-list-item active'>
-                <a href="">
+              <li className='sidebar-list-item'>
+                <NavLink to='/'>
                     Dashboard
-                </a>
+                </NavLink>
             </li>
             <li className='sidebar-list-item'>
-                <a href="">
-                     Users
-                </a>
+            <NavLink to='/dashboard/users'>
+                    Users
+                </NavLink>
             </li>
             <li className='sidebar-list-item'>
-                <a href="">
+            <NavLink to='/dashboard/profile'>
                     Profile
-                  </a>
+                </NavLink>
             </li>
             <li className='sidebar-list-item'>
-                <a href="">
+            <NavLink to='/dashboard/change-password'>
                     Change Password
-                </a>
+                </NavLink>
             </li>
             <li className='sidebar-list-item'>
-                <a href="">
+            <NavLink to='/dashboard/logout'>
                     Logout
-                </a>
+                </NavLink>
             </li>
         </ul>
     </aside>

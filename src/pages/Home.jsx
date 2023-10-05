@@ -1,4 +1,3 @@
-
 import Chart from '../components/Chart'
 import '../styles/home.css'
  

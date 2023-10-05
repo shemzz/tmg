@@ -1,23 +1,23 @@
-import { useState } from 'react'
+import { Routes, Route, Navigate} from 'react-router-dom'; 
+
 import './App.css'
 
-import Home from './pages/Home'
-import Header from './components/Header'
-import SideBar from './components/Sidebar'
+
+import Dashboard from './layout/dashboard';
+import Auth from './layout/auth';
+import NotFound from './pages/404';
 
 function App() {
-  const [openSidebarToggle, setOpenSidebarToggle] = useState(false)
-
-  const OpenSidebar = () => {
-    setOpenSidebarToggle(!openSidebarToggle)
-  }
 
   return (
-    <div className='grid-container'>
-      <Header OpenSidebar={OpenSidebar}/>
-      <SideBar openSidebarToggle={openSidebarToggle} OpenSidebar={OpenSidebar}/>
-      <Home />
-    </div>
+    <>
+      <Routes>
+        <Route path='/' element={<Navigate to="/dashboard" replace />} />
+        <Route path='/dashboard/*' element={<Dashboard />} />
+        <Route path='/auth' element={<Auth />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </>
   )
 }
 
