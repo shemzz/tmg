@@ -7,8 +7,9 @@ import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import { BsTrash } from 'react-icons/bs';
 import { Button } from '@mui/material';
-import { orange, grey } from '@mui/material/colors';
+import { grey } from '@mui/material/colors';
 import Link from '@mui/material/Link';
+import { useNavigate } from 'react-router-dom';
 
 function createData(
   id,
@@ -30,6 +31,7 @@ const rows = [
 ];
 
 export default function UsersTable() {
+    const navigate = useNavigate();
     const survey = grey[900];
   return (
     <Paper>
@@ -62,15 +64,15 @@ export default function UsersTable() {
                       <Button size="small" color='error' className={row.actions.actions.block}><BsTrash className='delete' /></Button>
 
                           <small>
-                          <Link to="#" underline="always" color='error'>
+                              <Link underline="always" color='error' onClick={()=>navigate(`/dashboard/users/user/${row.id}`)}>
                           View/Edit Details
                           </Link></small>
                           <small>
-                          <Link to="#" underline="always" color='primary'>
+                          <Link underline="always" color='primary' onClick={()=>navigate(`/dashboard/users/user/${row.id}/progress`)}>
                           Progress
                               </Link></small>
                               <small>
-                          <Link to="#" underline="always" color={survey}>
+                          <Link underline="always" color={survey} onClick={()=>navigate(`/dashboard/users/user/${row.id}/survey`)}>
                           Survey
                           </Link></small>
                       </div>
