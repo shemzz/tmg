@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import '../styles/sidebar.css';
