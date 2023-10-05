@@ -10,22 +10,22 @@ function SignIn() {
 
             <div className='signin'>
             <div className='logo-holder'>
-                <img src={logo} alt="logo" />
+                <img src={logo} width={140} alt="logo" />
                 </div>
                 <div className='form-holder'>
                     <h2>Login</h2>
                     <form>
                     <div className="form-group">
-                <label htmlFor="username">Username</label>
-                <input type="text" id="username" required />
+                <label htmlFor="username">Email</label>
+                <input type="email" placeholder='Enter Email' id="username" required />
             </div>
             <div className="form-group">
                 <label for="password">Password</label>
-                <input type="password" id="password" required />
+                <input type="password" placeholder='●●●●●●' id="password" required />
             </div>
                             <button type="button" onClick={()=>navigate('/dashboard')}>Log In</button>
                     </form>
-                    <p>Don't have an account? <Link>Sign Up</Link></p>
+                    <p>Don't have an account? <Link className='link'>Sign Up</Link></p>
                 </div>
             </div>
             </div>

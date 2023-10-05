@@ -30,8 +30,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
-    margin-bottom: 20px;
+    padding: 15px;
+    margin-bottom: 10px;
     border-radius: 7px;
     background-color: #1D7EC3;
 }
@@ -41,13 +41,15 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
-    margin-bottom: 20px;
+    padding: 15px;
+    margin-bottom: 10px;
     border-radius: 7px;
     background-color: #ffffff;
 }
 .form-holder h2{
-    margin: 12px;
+    margin: 5px;
+    font-size: 22px;
+    font-weight: 500;
 }
 .form-holder form {
     display: flex;
@@ -62,7 +64,7 @@
 .form-group {
     width: 100%;
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -77,21 +79,27 @@ label {
     transition: 0.2s ease all;
     color: #000000;
     margin-bottom: 5px;
+    margin-left: 12px;
 }
-
+.link{
+    color: #000000;
+    font-weight: 600;
+}
 input {
-    width: 90%;
-    padding: 10px 20px;
+    width: 87%;
+    padding: 8px 20px;
     border: none;
     border-radius: 20px;
     outline: none;
-    background-color: #e4e0e0;
+    background-color: #efefef;
     color: #030303;
     font-size: 16px;
 }
 
 input:focus {
     border: 1px solid #1D7EC3;
+    background-color: #ffffff;
+    color: grey;
 }
 
 button {
