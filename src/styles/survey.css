@@ -97,6 +97,59 @@ background: linear-gradient(to bottom, #1D7CC0, #0E456E); /* W3C, IE 10+/ Edge, 
   cursor: pointer;
 }
 
+.progress{
+  background-color: #217ab9 !important;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.progress .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.progress .title img{
+  margin-right: 10px;
+} 
+
+.progress .title p{
+  font-size: 22px;
+} 
+
+.progress:nth-child(2){
+  background-color: #5099cc !important;
+}
+.progress:nth-child(3){
+  background-color: #90bedf !important;
+}
+.progress:nth-child(4){
+  background-color: #a2d0f1 !important;
+}
+.progress-wrapper {
+  position: relative;
+  width: 50px;
+  height: 50px;
+}
+
+.progress-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 12px;
+  font-weight: bold;
+  color: #1D7CC0;
+  background-color: #ffffff;
+  border-radius: 50%;
+  margin: 0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 @media screen and (max-width: 768px) {
   .survey{

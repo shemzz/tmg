@@ -6,7 +6,7 @@ import Users from '../pages/Users';
 
 import Header from '../components/Header'
 import UserDetail from '../components/UserDetail';
-import Progress from '../components/Progress';
+import Progress from '../pages/Progress';
 import Sidebar from '../components/Sidebar';
 import AddUser from '../components/AddUser';
 import Profile from '../components/Profile';
