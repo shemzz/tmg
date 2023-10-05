@@ -1,6 +1,5 @@
 import { useState } from 'react';
-import { Button, InputAdornment, IconButton } from '@mui/material';
-import { Visibility, VisibilityOff } from "@mui/icons-material";
+import { Button } from '@mui/material';
 import '../styles/user.css';
 import photoIcon from '../assets/update-photo.png';
 import user from '../assets/user.png';
@@ -25,7 +24,11 @@ export default function Profile() {
                 <div className='user add'>
                     <div className='edit'>
                         <div className='img-holder'>
-                            <img src={user} alt="user" width={100} />
+                            {isEditing ?
+                                <img src={photoIcon} alt="user" width={100} />
+                                :
+                                <img src={user} alt="user" width={100} />
+                            }
                         </div>
                         <div className='add-detail profile'>
                             <label>Name</label>

@@ -10,6 +10,7 @@ import Progress from '../components/Progress';
 import Sidebar from '../components/Sidebar';
 import AddUser from '../components/AddUser';
 import Profile from '../components/Profile';
+import ChangePassword from '../components/ChangePassword';
 
 function Dashboard() {
   const [openSidebarToggle, setOpenSidebarToggle] = useState(false)
@@ -30,6 +31,7 @@ function Dashboard() {
         <Route path='/users/user/:id/progress' element={<Progress />} />
         <Route path='/users/add-user' element={<AddUser />} />
         <Route path='/profile' element={<Profile />} />
+        <Route path='/change-password' element={<ChangePassword />} />
         <Route path='*' element={<h1>Not Found</h1>} />
       </Routes>
       <footer className='footer'>

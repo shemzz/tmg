@@ -190,6 +190,10 @@ main{
     padding: 6px 30px;
     background-color: #1D7EC3;
   }
+  .blue-logo{
+    margin: 50px 10px ;
+    width: 40% !important;
+  }
    /* Small <= 768px */
     
    @media screen and (max-width: 768px) {
