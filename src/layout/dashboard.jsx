@@ -7,6 +7,7 @@ import Users from '../pages/Users';
 import Header from '../components/Header'
 import SideBar from '../components/SideBar'
 import UserDetail from '../components/UserDetail';
+import Progress from '../components/Progress';
 
 function Dashboard() {
   const [openSidebarToggle, setOpenSidebarToggle] = useState(false)
@@ -24,6 +25,7 @@ function Dashboard() {
               <Route path='/' element={<Home />} />
         <Route path='/users' element={<Users />} />
         <Route path='/users/user/:id' element={<UserDetail />} />
+        <Route path='/users/user/:id/progress' element={<Progress />} />
                   <Route path='*' element={<h1>Not Found</h1>} />
             </Routes>
   </div>

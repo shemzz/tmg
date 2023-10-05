@@ -7,7 +7,8 @@ import photoIcon from '../assets/update-photo.png'
 
 export default function UserDetail() {
     const [isEditing, setIsEditing] = useState(false);
-    const [isUpdated, setIsUpdated] = useState(false);
+  const [isUpdated, setIsUpdated] = useState(false);
+  const arr = '<';
 
     const toggleEdit = () => {
         setIsEditing(!isEditing);
@@ -25,7 +26,7 @@ export default function UserDetail() {
   return (
     <main className='main'>
     <div className='title'>
-          <h3>User <small className='small'> View/Edit Details</small></h3>
+        <h3>User <small className='small'> {arr} View/Edit Details</small></h3>
       </div>
     <div className='main-container'>
                 <div className='user'>
