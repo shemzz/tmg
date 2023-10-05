@@ -7,7 +7,7 @@ import logo from '../assets/logo.png';
 import { BsXCircle } from 'react-icons/bs';
 import { NavLink } from 'react-router-dom';
 
-function Sidebar({ openSidebarToggle, OpenSidebar }) {
+export default function Sidebar({ openSidebarToggle, OpenSidebar }) {
   const location = useLocation();
   const [activeItem, setActiveItem] = useState('Dashboard');
 
@@ -54,5 +54,3 @@ function Sidebar({ openSidebarToggle, OpenSidebar }) {
     </aside>
   )
 }
-
-export default Sidebar;

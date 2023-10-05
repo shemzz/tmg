@@ -5,9 +5,9 @@ import Home from '../pages/Home';
 import Users from '../pages/Users';
 
 import Header from '../components/Header'
-import SideBar from '../components/SideBar'
 import UserDetail from '../components/UserDetail';
 import Progress from '../components/Progress';
+import Sidebar from '../components/Sidebar';
 
 function Dashboard() {
   const [openSidebarToggle, setOpenSidebarToggle] = useState(false)
@@ -19,7 +19,7 @@ function Dashboard() {
   return (
     <div className='grid-container'>
         <Header OpenSidebar={OpenSidebar}/>
-          <SideBar openSidebarToggle={openSidebarToggle} OpenSidebar={OpenSidebar} />
+          <Sidebar openSidebarToggle={openSidebarToggle} OpenSidebar={OpenSidebar} />
           
           <Routes>
               <Route path='/' element={<Home />} />
