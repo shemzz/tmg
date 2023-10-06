@@ -20,6 +20,9 @@ export default function AddUser() {
             <div className='main-container'>
                 <div className='user add'>
                     <div className='edit'>
+                    <div style={{width: '100%'}}>
+                        <p style={{ textAlign: 'left' } } >Add New User</p>
+                        </div>
                         <div className='img-holder'>
                             <img src={photoIcon} alt="user" width={100} />
                         </div>

@@ -20,6 +20,9 @@ export default function ChangePassword() {
             <div className='main-container'>
                 <div className='user add'>
                     <div className='edit'>
+                    <div style={{width: '100%'}}>
+                        <p style={{ textAlign: 'left' } } >Change Password</p>
+                        </div>
                         <div className='img-holder blue-logo'>
                             <img src={blueLogo} alt="user" width={100} />
                         </div>

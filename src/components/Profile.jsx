@@ -23,6 +23,16 @@ export default function Profile() {
             <div className='main-container'>
                 <div className='user add'>
                     <div className='edit'>
+                    {isEditing ?
+                                <div style={{width: '100%'}}>
+                                <p style={{ textAlign: 'left' } } >Edit Profile</p>
+                                </div>
+                                :
+                                <div style={{width: '100%'}}>
+                        <p style={{ textAlign: 'left' } } >Profile</p>
+                        </div>
+                            }
+                        
                         <div className='img-holder'>
                             {isEditing ?
                                 <img src={photoIcon} alt="user" width={100} />

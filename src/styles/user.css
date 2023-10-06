@@ -112,6 +112,9 @@
    .email{
     font-size: 12px;
    }
+   .view label{
+    margin-left: 0;
+   }
   .user .update {
     background-color: #bcaf03;
   }

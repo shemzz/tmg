@@ -34,7 +34,7 @@ export default function UserDetail() {
                       <div className='img-holder'>
                           <img src={user} alt="user" width={100} />
                       </div>
-                      <div className='detail'>
+                      <div className='detail view'>
                           <label>Name</label>
                           <p className='small'>Safaa</p>
 

@@ -37,6 +37,9 @@ background: linear-gradient(to bottom, #1D7CC0, #0E456E); /* W3C, IE 10+/ Edge, 
   font-weight: 600;
   font-size: 18px;
   cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .chapter-card{
   background-color: #156299;
@@ -67,6 +70,9 @@ background: linear-gradient(to bottom, #1D7CC0, #0E456E); /* W3C, IE 10+/ Edge, 
 }
 .chapter-card:nth-child(10){
   background-color: #096db5;
+}
+.arrow {
+  font-size: 26px;
 }
 .main-container{
   margin: 0px;

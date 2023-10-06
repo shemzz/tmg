@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import '../styles/survey.css';
 import { useNavigate, useParams } from 'react-router-dom';
+import { ArrowRight } from '@mui/icons-material';
 
 export default function Survey() {
   const navigate = useNavigate();
@@ -59,7 +60,7 @@ export default function Survey() {
             {activeChapters.map((chapter) => (
               <div key={chapter.title} className='chapter-card' onClick={()=>openChapter(id, chapter.menu, chapter.title)}>
                 {chapter.title}
-                <span className='arrow'>&rarr;</span>
+                <span className='arrow'>&gt;</span>
               </div>
             ))}
           </div>
