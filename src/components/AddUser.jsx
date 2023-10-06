@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Button, InputAdornment, IconButton, TextField } from '@mui/material';
+import { Button, InputAdornment, IconButton } from '@mui/material';
 import { Visibility, VisibilityOff } from "@mui/icons-material";
 import '../styles/user.css';
 import photoIcon from '../assets/update-photo.png';

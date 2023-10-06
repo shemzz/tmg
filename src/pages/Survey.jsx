@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import '../styles/survey.css';
 import { useNavigate, useParams } from 'react-router-dom';
-import { ArrowRight } from '@mui/icons-material';
 
 export default function Survey() {
   const navigate = useNavigate();
