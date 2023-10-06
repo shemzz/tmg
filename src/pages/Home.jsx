@@ -18,7 +18,7 @@ function Home() {
         <div className='main-cards'>
         <div className='card'>
         <div className='card-img'>
-                <img src={registered} alt="total profile" height={55} />
+                <img src={registered} alt="registered profile" width={50} />
             </div>
                 <div className='card-inner'>
                     <h5>Registered Profiles</h5>
@@ -27,7 +27,7 @@ function Home() {
           </div>
           <div className='card'>
             <div className='card-img'>
-                <img src={building} alt="total profile" height={55} />
+                <img src={building} alt="company profile" width={50} />
             </div>
                 <div className='card-inner'>
                     <h5>Company Profiles</h5>
@@ -36,7 +36,7 @@ function Home() {
             </div>
             <div className='card'>
             <div className='card-img'>
-                <img src={team} alt="total profile" height={55} />
+                <img src={team} alt="total profile" width={55} />
             </div>
                 <div className='card-inner'>
                     <h5>Total Profiles</h5>

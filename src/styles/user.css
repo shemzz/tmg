@@ -1,26 +1,4 @@
-/* Main  */  
-main{
-  grid-area: main;
-  overflow-y: auto;
-}
-.main-container{
-  padding: 20px;
-  background-color: #f5f5f5;
-  overflow-y: auto;
-  height: 100%;
-}
-  
-  .title {
-    font-size: 1.5em;
-    font-weight: 500;
-    margin-left: 20px;
-    margin-bottom: 0px;
-  }
-  .title h3 {
-    padding: 0;
-    margin: 25px 15px 0px;
-  }
-  
+
   .users-container{
     background-color: #fff;
     margin-top: 10px;
